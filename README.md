@@ -56,6 +56,11 @@ Algorithm           |  Fee
 dynex               | 3%
 
 
+Requirements
+------------------------------------------ 
+* Minimum Compute Capability of 6.0.
+* Binary file have been built with CUDA 12.0 and minimum supported Nvidia driver version is 525.60.13. 
+
 HiveOS
 ------------------------------------------
 #### HiveOS package name is onezerominer-x.x.x.tar.gz
