@@ -5,6 +5,7 @@ Optimized GPU miner for crypto projects. This is the initial release and the onl
 
 ![GitHub all releases](https://img.shields.io/github/downloads/OneZeroMiner/onezerominer/total)
 
+
 Website: http://onezerominer.com
 
 Discord server : https://discord.gg/mXnyrHa
