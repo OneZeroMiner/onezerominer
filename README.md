@@ -59,6 +59,6 @@ dynex               | 3%
 HiveOS
 ------------------------------------------
 #### HiveOS package name is onezerominer-x.x.x.tar.gz
-Sample Flight Sheet:
+#### Sample Flight Sheet:
 
-
+![HiveOS](https://github.com/OneZeroMiner/onezerominer/raw/main/hiveos.png?raw=true)
