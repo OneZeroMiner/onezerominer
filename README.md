@@ -15,38 +15,52 @@ Releases: https://github.com/OneZeroMiner/onezerominer/releases
 Options
 ------------------------------------------           
  ```                                                                                                   
-Options:                                                                                            
-  -a, --algo <algo>                                                                                 
-          The algorithm to use for mining. Currently supported algorithms are:                      
-                - dynex   (dnx)                                                                     
-                                                                                                    
-           [possible values: dynex]                                                                 
-  -o, --pool <pool>                                                                                 
-          Pool URL address                                                                          
-  -w, --wallet <wallet>                                                                             
-          Wallet address/Pool Username                                                              
-  -p, --pass <pass>                                                                                 
-          Pool Password [default: X]                                                                
-      --api-host <api_host>                                                                         
-          Host of the API [default: 127.0.0.1]                                                      
-      --api-port <api_port>                                                                         
-          Port of the API [default: 3001]                                                           
-      --api-disable                                                                                 
-          Disable API                                                                               
-  -d, --devices <devices>                                                                           
-          Comma seperated list of devices to use                                                    
-      --chips-memory <chips-memory>                                                                 
-          Percentage of memory allocated for dynex chips.                             
-  -i, --intensity <intensity>                                                                       
-          Intensity multiplier for the pow part. Number of pow hashes in one round = intensity * 32 
-      --mallob-endpoint <mallob_endpoint>                                                           
-          Mallob endpoint for Dynex                                                                 
-      --log-file <log_file>                                                                         
-          log file path                                                                             
-  -h, --help                                                                                        
-          Print help                                                                                
-  -V, --version                                                                                     
-          Print version  
+Options:        
+  -a, --algo <algo>
+          The algorithm to use for mining. Currently supported algorithms are: 
+                - dynex   (dnx)
+          
+           [possible values: dynex]
+  -o, --pool <pool>
+          Comma seperated list of pools to use
+  -w, --wallet <wallet>
+          Wallet address/Pool Username
+  -p, --pass <pass>
+          Pool Password [default: X]
+      --api-host <api_host>
+          Host of the API [default: 127.0.0.1]
+      --api-port <api_port>
+          Port of the API [default: 3001]
+      --api-disable
+          Disable API
+  -d, --devices <devices>
+          Comma seperated list of devices to use
+      --chips-memory <chips-memory>
+          Percentage of memory allocated for dynex chips. Default is 90
+      --mallob-endpoint <mallob_endpoint>
+          List of Mallob endpoints for Dynex
+      --log-file <log_file>
+          log file path
+      --cclk <cclk>
+          list of core clocks. Use * to skip a GPU
+      --coff <coff>
+          list of core clocks offsets. Use * to skip a GPU
+      --mclk <mclk>
+          list of memory clocks. Use * to skip a GPU
+      --moff <moff>
+          list of memory clocks offsets. Use * to skip a GPU
+      --fan <fan>
+          list of fan speeds. Use * to skip a GPU
+      --pl <pl>
+          list of power limits. Use * to skip a GPU
+      --max-no-job <max_no_job>
+          Maximum number of minutes that the pool can stay connected without recieving a new job [default: 15]
+      --max-no-acc <max_no_acc>
+          Maximum number of minutes that the pool can stay connected without an accepted share [default: 15]
+  -h, --help
+          Print help
+  -V, --version
+          Print version
 ```
 
 Dev fee
