@@ -36,7 +36,8 @@ Options:
   -d, --devices <devices>
           Comma seperated list of devices to use
       --chips-memory <chips-memory>
-          Percentage of total memory allocated for dynex chips. (Default is 96 percent but uses free memory instead of total)
+          Percentage of total memory allocated for dynex chips. 
+          (Default is 96 percent but uses free memory instead of total)
       --mallob-endpoint <mallob_endpoint>
           List of Mallob endpoints for Dynex
       --log-file <log_file>
