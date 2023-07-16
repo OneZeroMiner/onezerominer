@@ -1,6 +1,6 @@
-# OneZeroMiner 1.0.1
+# OneZeroMiner 
 
-Optimized GPU miner for crypto projects. This is the initial release and the only supported algorithm is DynexSolve.
+Optimized GPU miner for crypto projects. Currently, the only supported algorithm is DynexSolve.
 ### Links 
 
 ![GitHub all releases](https://img.shields.io/github/downloads/OneZeroMiner/onezerominer/total)
