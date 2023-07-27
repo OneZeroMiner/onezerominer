@@ -74,8 +74,8 @@ dynex               | 3%
 
 Requirements
 ------------------------------------------ 
-* Minimum Compute Capability of 6.0.
-* Binary file have been built with CUDA 12.0 and minimum supported Nvidia driver version is 525.60.13. 
+* Minimum Compute Capability of 3.5.
+* Binary file have been built with CUDA 11.8 and minimum supported Nvidia driver version is 450.80.02.
 
 HiveOS
 ------------------------------------------
