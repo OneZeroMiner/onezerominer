@@ -58,6 +58,8 @@ Options:
           Maximum number of minutes that the pool can stay connected without recieving a new job [default: 15]
       --max-no-acc <max_no_acc>
           Maximum number of minutes that the pool can stay connected without an accepted share [default: 15]
+       --nt <nt>
+          Tuning parameter. This is a comma separated list and the acceptable values for each gpu are 0, 1, 2, 4, 8, 16, 32. Use * or 0 to skip a GPU
   -h, --help
           Print help
   -V, --version
