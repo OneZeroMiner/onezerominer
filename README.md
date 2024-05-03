@@ -19,6 +19,7 @@ Options:
   -a, --algo <algo>
           The algorithm to use for mining. Currently supported algorithms are: 
                 - dynex   (dnx)
+                - xelis  (xel)
                 - zilliqa  (zil)
           
           
