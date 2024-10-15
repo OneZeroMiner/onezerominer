@@ -16,7 +16,7 @@ Options
 ------------------------------------------           
  ```                                                                                                   
 Options:
-  -a, --algo <algo>
+ -a, --algo <algo>
           The algorithm to use for mining. Currently supported algorithms are: 
                 - dynex   (dnx)
                 - xelis  (xel)
@@ -79,7 +79,7 @@ Options:
           Comma seperated list of devices to use for the second algorithm
 
       --chips-memory <chips-memory>
-          Percentage of total memory allocated for dynex chips. Default uses 96% of free memory instead of total memory
+          Maximum memory allocated in percentage. eg: 70 (alias: max-memory)
 
       --mallob-endpoint <mallob_endpoint>
           List of Mallob endpoints for Dynex
@@ -149,6 +149,21 @@ Options:
       --zil-test-port <zil_test_port>
           Port of the Zil test pool
 
+      --enable-snapshot
+          enables storing/loading the best found state on Dynex SAT jobs. Warning: This might generate rejected shares.
+
+      --purge-snapshot
+          Delete all snapshot files
+
+      --xelis-solo
+          Xelis solo mining mode
+
+      --disable-amd
+          Disable AMD GPUs
+
+      --disable-nvidia
+          Disable Nvidia GPUs
+
   -h, --help
           Print help (see a summary with '-h')
 
@@ -156,23 +171,22 @@ Options:
           Print version
 ```
 
-Dev fee
+Supported algorithms
 ------------------------------------------
 
-Algorithm           |  Fee 
---------------------| ---- 
-dynex               | 3%
-zil                 | 0%
+Algorithm           |  Nvidia | AMD |
+--------------------| --------|-----|
+dynex               | 3%      | x   |
+xelis               | 2%      | 3%  |
+zil                 | 0%      | x   |
 
 
 Requirements
 ------------------------------------------ 
 * Minimum Compute Capability of 3.5.
 * Binary file have been built with CUDA 11.8 and minimum supported Nvidia driver version is 450.80.02.
+* AMD ROCM drivers 5.6 or later
 
-HiveOS
+HiveOS and mmpOS
 ------------------------------------------
-#### HiveOS package name is onezerominer-x.x.x.tar.gz
-#### Sample Flight Sheet:
-
-![HiveOS](https://github.com/OneZeroMiner/onezerominer/raw/main/hiveos.png?raw=true)
+#### Custom package name is onezerominer-x.x.x.tar.gz
