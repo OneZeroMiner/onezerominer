@@ -149,12 +149,6 @@ Options:
       --zil-test-port <zil_test_port>
           Port of the Zil test pool
 
-      --enable-snapshot
-          enables storing/loading the best found state on Dynex SAT jobs. Warning: This might generate rejected shares.
-
-      --purge-snapshot
-          Delete all snapshot files
-
       --xelis-solo
           Xelis solo mining mode
 
@@ -163,6 +157,9 @@ Options:
 
       --disable-nvidia
           Disable Nvidia GPUs
+      
+      --disable_telemetry
+          Opt out of submitting information to the telemetry server
 
   -h, --help
           Print help (see a summary with '-h')
@@ -176,15 +173,15 @@ Supported algorithms
 
 Algorithm           |  Nvidia | AMD |
 --------------------| --------|-----|
-dynex               | 3%      | x   |
-xelis               | 2%      | 3%  |
+dynex               | 2%      | x   |
+xelis               | 1%      | 2%  |
 zil                 | 0%      | x   |
 
 
 Requirements
 ------------------------------------------ 
-* Minimum Compute Capability of 3.5.
-* Binary file have been built with CUDA 11.8 and minimum supported Nvidia driver version is 450.80.02.
+* Minimum Compute Capability of 6.0.
+* Binary file have been built with CUDA 12.8 and minimum supported Nvidia driver version is 528.33.
 * AMD ROCM drivers 5.6 or later
 
 HiveOS and mmpOS
