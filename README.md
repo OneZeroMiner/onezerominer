@@ -183,6 +183,8 @@ Requirements
 * Minimum Compute Capability of 6.0.
 * Binary file have been built with CUDA 12.8 and minimum supported Nvidia driver version is 528.33.
 * AMD ROCM drivers 5.6 or later
+* Latest Microsoft Visual C++ Redistributable package on Windows. Direct link: 
+https://aka.ms/vs/17/release/vc_redist.x64.exe
 
 HiveOS and mmpOS
 ------------------------------------------
