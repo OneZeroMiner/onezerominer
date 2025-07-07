@@ -16,11 +16,12 @@ Options
 ------------------------------------------           
  ```                                                                                                   
 Options:
- -a, --algo <algo>
+  -a, --algo <algo>
           The algorithm to use for mining. Currently supported algorithms are: 
-                - dynex   (dnx)
-                - xelis  (xel)
-                - zilliqa  (zil)
+                - dynex
+                - xelishashv2
+                - cryptix_ox8
+                - zilliqa
           
           
 
@@ -78,8 +79,8 @@ Options:
       --d2 <devices2>
           Comma seperated list of devices to use for the second algorithm
 
-      --chips-memory <chips-memory>
-          Maximum memory allocated in percentage. eg: 70 (alias: max-memory)
+      --max-memory <max-memory>
+          Maximum memory allocated in percentage. eg: 70 (alias: chips-memory)
 
       --mallob-endpoint <mallob_endpoint>
           List of Mallob endpoints for Dynex
@@ -157,9 +158,14 @@ Options:
 
       --disable-nvidia
           Disable Nvidia GPUs
-      
-      --disable_telemetry
-          Opt out of submitting information to the telemetry server
+
+      --disable-telemetry
+          Disable data analytics
+
+      --hashrate-avg <hashrate_avg>
+          Number of seconds to average the hashrate over. Default is 10
+          
+          [default: 10]
 
   -h, --help
           Print help (see a summary with '-h')
@@ -175,6 +181,7 @@ Algorithm           |  Nvidia | AMD |
 --------------------| --------|-----|
 dynex               | 2%      | x   |
 xelis               | 1%      | 2%  |
+cryptix             | 2%      | x   |
 zil                 | 0%      | x   |
 
 
