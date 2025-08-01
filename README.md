@@ -21,7 +21,9 @@ Options:
                 - dynex
                 - xelishashv2
                 - cryptix_ox8
+                - qhash
                 - zilliqa
+                
           
           
 
@@ -180,8 +182,9 @@ Supported algorithms
 Algorithm           |  Nvidia | AMD |
 --------------------| --------|-----|
 dynex               | 2%      | x   |
-xelis               | 1%      | 2%  |
-cryptix             | 2%      | x   |
+xelishashv2         | 1%      | 2%  |
+cryptix_ox8         | 2%      | x   |
+qhash               | 5%      | x   |
 zil                 | 0%      | x   |
 
 
