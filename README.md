@@ -23,7 +23,6 @@ Options:
                 - cryptix_ox8
                 - qhash
                 - zilliqa
-                
           
           
 
@@ -135,10 +134,10 @@ Options:
           This option is not recommended. If you set this flag, the miner will accept any certificate including invalid, expired or self signed certificates.
 
       --nt <nt>
-          Tuning parameter. This is a comma separated list and the acceptable values for each gpu are 1, 2, 4, 8, 16, 32. Use * or 0 to skip a GPU
+          Tuning parameter for Dynex. This is a comma separated list and the acceptable values for each gpu are 1, 2, 4, 8, 16, 32. Use * or 0 to skip a GPU
 
       --nr <nr>
-          Tuning parameter. This is a comma separated list and the acceptable values for each gpu are 1, 2, 4, 8. Use * or 0 to skip a GPU
+          Tuning parameter for Dynex. This is a comma separated list and the acceptable values for each gpu are 1, 2, 4, 8. Use * or 0 to skip a GPU
 
       --zil-before-script <zil_before_script>
           script to run before Zilliqa sessions
@@ -168,6 +167,15 @@ Options:
           Number of seconds to average the hashrate over. Default is 10
           
           [default: 10]
+
+      --dns-over-https
+          DNS resolution over HTTPS
+
+      --proxy <proxy>
+          SOCKS5 proxy connection. Format: <host>:<port> or <user>:<pass>@<host>:<port>
+
+      --kernel <kernel>
+          Supported only for qubitcoin. Default is 1, kernel 2 is for cmp cards. eg: --kernel 1,1,2
 
   -h, --help
           Print help (see a summary with '-h')
