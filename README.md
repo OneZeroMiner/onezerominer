@@ -192,7 +192,7 @@ Algorithm           |  Nvidia | AMD |
 dynex               | 2%      | x   |
 xelishashv2         | 1%      | 2%  |
 cryptix_ox8         | 2%      | x   |
-qhash               | 5%      | x   |
+qhash               | 3%      | x   |
 zil                 | 0%      | x   |
 
 
