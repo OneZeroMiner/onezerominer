@@ -177,6 +177,9 @@ Options:
       --kernel <kernel>
           Supported only for qubitcoin. Default is 1, kernel 2 is for cmp cards. eg: --kernel 1,1,2
 
+      --dual-intensity <dual-intensity>
+          comma seperated list of intensity pairs of the two algorithms for dual mining( Use * to skip a GPU). Format: <intensity_algo1>_<intensity_algo2>. eg: 9_7, *, 10_8
+
   -h, --help
           Print help (see a summary with '-h')
 
@@ -194,6 +197,12 @@ xelishashv2         | 1%      | 2%  |
 cryptix_ox8         | 2%      | x   |
 qhash               | 3%      | x   |
 zil                 | 0%      | x   |
+
+Supported dual mining pairs
+------------------------------------------
+xelishashv2-qhash (Nvidia only)
+
+
 
 
 Requirements
