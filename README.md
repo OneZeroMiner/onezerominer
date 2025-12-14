@@ -19,7 +19,7 @@ Options:
   -a, --algo <algo>
           The algorithm to use for mining. Currently supported algorithms are: 
                 - dynex
-                - xelishashv2
+                - xelishashv3
                 - cryptix_ox8
                 - qhash
                 - zilliqa
@@ -193,7 +193,7 @@ Supported algorithms
 Algorithm           |  Nvidia | AMD |
 --------------------| --------|-----|
 dynex               | 2%      | x   |
-xelishashv2         | 1%      | 2%  |
+xelishashv3         | 2%      | 2%  |
 cryptix_ox8         | 2%      | x   |
 qhash               | 3%      | x   |
 zil                 | 0%      | x   |
