@@ -17,15 +17,7 @@ Options
  ```                                                                                                   
 Options:
   -a, --algo <algo>
-          The algorithm to use for mining. Currently supported algorithms are: 
-                - dynex
-                - xelishashv3
-                - cryptix_ox8
-                - qhash
-                - zilliqa
-          
-          
-
+          The algorithm to use for mining. 
       --a2 <algo2>
           The second algorithm
 
@@ -196,6 +188,7 @@ dynex               | 2%      | x   |
 xelishashv3         | 2%      | 2%  |
 cryptix_ox8         | 2%      | x   |
 qhash               | 3%      | x   |
+pearlhash           | 1%      | x   |
 zil                 | 0%      | x   |
 
 Supported dual mining pairs
