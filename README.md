@@ -190,7 +190,7 @@ cryptix_ox8         | 2%      | x   |
 qhash               | 3%      | x   |
 pearlhash           | 1%      | x   |
 quantus             | 2%      | x   |
-zil                 | 0%      | x   |
+poseidon2b(noid)    | 1%      | x   |
 
 Supported dual mining pairs
 ------------------------------------------
