@@ -15,16 +15,28 @@ Releases: https://github.com/OneZeroMiner/onezerominer/releases
 Options
 ------------------------------------------           
  ```                                                                                                   
+
 Options:
   -a, --algo <algo>
-          The algorithm to use for mining. 
+          The algorithm to use for mining. Currently supported algorithms are: 
+                - dynex
+                - xelishashv3
+                - cryptix_ox8
+                - qhash
+                - pearlhash
+                - quantus
+                - poseidon2b (aliases: parano1d, noid)
+                - zilliqa
+          
+          
+
       --a2 <algo2>
           The second algorithm
 
-  -o, --pool <pool>
+  -o, --pool <pool>...
           You can use ssl:// or stratum+ssl:// prefix for SSL/TLS encrypted connections.
 
-      --o2 <pool2>
+      --o2 <pool2>...
           List of pools for the second algorithm
 
   -w, --wallet <wallet>
@@ -74,6 +86,9 @@ Options:
 
       --max-memory <max-memory>
           Maximum memory allocated in percentage. eg: 70 (alias: chips-memory)
+
+  -i, --intensity <intensity>
+          quantus/poseidon2b: work per GPU batch, from 1 to 12 (default 8). Higher values mean larger batches, not necessarily a higher hashrate. Very high intensities may increase stale shares by delaying job switches. eg: --intensity 8,*,10
 
       --mallob-endpoint <mallob_endpoint>
           List of Mallob endpoints for Dynex
@@ -167,7 +182,21 @@ Options:
           SOCKS5 proxy connection. Format: <host>:<port> or <user>:<pass>@<host>:<port>
 
       --kernel <kernel>
-          Supported only for qubitcoin. Default is 1, kernel 2 is for cmp cards. eg: --kernel 1,1,2
+          Kernel per device: a comma list by device position, the last entry covering the rest; * = default.
+          
+          algorithm   kernel   cards               meaning
+          ---------   ------   -----------------   -------------------------------------------
+          qubitcoin   2        CMP cards           the CMP kernel
+          pearlhash   1        all cards           normal kernel (force with --kernel 1)
+          pearlhash   2        SM75/86/89/120      compact kernel; supports 810 MHz memory
+          pearlhash   default  SM86/89/120         compact, regardless of memory clock
+          pearlhash   default  SM75 (Turing)      compact at 810 MHz, normal otherwise
+          pearlhash   2        other cards         the alternate tuning where one exists
+          
+          eg: --kernel 1,1,2
+
+      --cpu-check
+          Verify the shares found by the GPUs on the CPU before submitting them
 
       --dual-intensity <dual-intensity>
           comma seperated list of intensity pairs of the two algorithms for dual mining( Use * to skip a GPU). Format: <intensity_algo1>_<intensity_algo2>. eg: 9_7, *, 10_8
@@ -202,7 +231,7 @@ xelishashv2-qhash (Nvidia only)
 Requirements
 ------------------------------------------ 
 * Minimum Compute Capability of 6.0.
-* Binary file have been built with CUDA 12.8 and minimum supported Nvidia driver version is 528.33.
+* Binary file have been built with CUDA 12.8 and minimum supported Nvidia driver version is 528.33. Hopper and Blackwell cards need driver v580+
 * AMD ROCM drivers 5.6 or later
 * Latest Microsoft Visual C++ Redistributable package on Windows. Direct link: 
 https://aka.ms/vs/17/release/vc_redist.x64.exe
