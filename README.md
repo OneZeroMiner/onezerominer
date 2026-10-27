@@ -16,6 +16,7 @@ Options
 ------------------------------------------           
  ```                                                                                                   
 
+
 Options:
   -a, --algo <algo>
           The algorithm to use for mining. Currently supported algorithms are: 
@@ -95,6 +96,11 @@ Options:
 
       --log-file <log_file>
           log file path
+
+      --core-delay <core-delay>
+          Delay core clocks and offsets from miner startup, in seconds (e.g. 10s)
+          
+          [default: 0]
 
       --cclk <cclk>
           list of core clocks. Use * to skip a GPU
