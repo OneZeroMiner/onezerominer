@@ -173,8 +173,16 @@ Options:
       --disable-nvidia
           Disable Nvidia GPUs
 
+      --disable-pearlhash-telemetry
+          Do not send device model names to Pearl user pools
+
       --disable-telemetry
           Disable data analytics
+
+      --stats-interval <SECONDS>
+          Console stats interval in seconds (minimum 5)
+          
+          [default: 30]
 
       --hashrate-avg <hashrate_avg>
           Number of seconds to average the hashrate over. Default is 10
